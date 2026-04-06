@@ -38,8 +38,7 @@ export type ProductListing = {
   distance: number; // distance in km from seller to buyer (calculated based on location)
   university: string; // university the seller is affiliated with
   verified: boolean; // whether the seller's university affiliation has been verified
-
-}
+};
 
 
 // IGNORE BELOW
