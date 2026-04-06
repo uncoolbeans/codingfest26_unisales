@@ -26,7 +26,7 @@ const users = [ //USED FOR LOGIN FUNCTIONALITY ONLY, NOT FOR DASHBOARD
 
 // NOTE: `customers` is kept for compatibility with the rest of the app,
 // but each object now matches the `SellerBuyer` type in `app/lib/definitions.ts`.
-const customers = [
+const SellerBuyers = [
   {
     id: 'd6e15727-9fe1-4961-8c5b-ea44a9bd81aa',
     name: 'Evil Rabbit',
@@ -85,7 +85,7 @@ const customers = [
 
 // NOTE: `invoices` is kept for compatibility with the rest of the app,
 // but each object now matches the `ProductListing` type in `app/lib/definitions.ts`.
-const invoices = [
+const ProductListings = [
   {
     name: 'Calculus I Textbook (Hardcover)',
     description:
@@ -93,11 +93,11 @@ const invoices = [
     price: 3500,
     condition: 'used',
     image_url: '/products/calculus-textbook.jpg',
-    seller_id: customers[2].id,
+    seller_id: SellerBuyers[2].id,
     location: 'Campus Library Entrance',
     distance: 1.2,
-    university: customers[2].university,
-    verified: customers[2].verified,
+    university: SellerBuyers[2].university,
+    verified: SellerBuyers[2].verified,
   },
   {
     name: 'Noise-Cancelling Headphones',
@@ -106,11 +106,11 @@ const invoices = [
     price: 12999,
     condition: 'open-box',
     image_url: '/products/headphones.jpg',
-    seller_id: customers[4].id,
+    seller_id: SellerBuyers[4].id,
     location: 'Engineering Building Lobby',
     distance: 0.8,
-    university: customers[4].university,
-    verified: customers[4].verified,
+    university: SellerBuyers[4].university,
+    verified: SellerBuyers[4].verified,
   },
   {
     name: 'Dorm Mini Fridge (3.2 cu ft)',
@@ -119,11 +119,11 @@ const invoices = [
     price: 7000,
     condition: 'used',
     image_url: '/products/mini-fridge.jpg',
-    seller_id: customers[5].id,
+    seller_id: SellerBuyers[5].id,
     location: 'North Residence Hall - Front Desk',
     distance: 2.3,
-    university: customers[5].university,
-    verified: customers[5].verified,
+    university: SellerBuyers[5].university,
+    verified: SellerBuyers[5].verified,
   },
   {
     name: 'Mechanical Keyboard (Hot-swappable)',
@@ -132,11 +132,11 @@ const invoices = [
     price: 8500,
     condition: 'refurbished',
     image_url: '/products/keyboard.jpg',
-    seller_id: customers[3].id,
+    seller_id: SellerBuyers[3].id,
     location: 'Student Center - Coffee Shop',
     distance: 3.6,
-    university: customers[3].university,
-    verified: customers[3].verified,
+    university: SellerBuyers[3].university,
+    verified: SellerBuyers[3].verified,
   },
   {
     name: 'Lab Coat (Size M)',
@@ -144,11 +144,11 @@ const invoices = [
     price: 1800,
     condition: 'new',
     image_url: '/products/lab-coat.jpg',
-    seller_id: customers[1].id,
+    seller_id: SellerBuyers[1].id,
     location: 'Chemistry Building - Main Entrance',
     distance: 0.5,
-    university: customers[1].university,
-    verified: customers[1].verified,
+    university: SellerBuyers[1].university,
+    verified: SellerBuyers[1].verified,
   },
   {
     name: 'External SSD 1TB (USB-C)',
@@ -157,11 +157,11 @@ const invoices = [
     price: 7999,
     condition: 'used',
     image_url: '/products/ssd.jpg',
-    seller_id: customers[4].id,
+    seller_id: SellerBuyers[4].id,
     location: 'Business School - Atrium',
     distance: 1.9,
-    university: customers[4].university,
-    verified: customers[4].verified,
+    university: SellerBuyers[4].university,
+    verified: SellerBuyers[4].verified,
   },
   {
     name: 'Desk Lamp (Adjustable)',
@@ -169,11 +169,11 @@ const invoices = [
     price: 1200,
     condition: 'used',
     image_url: '/products/desk-lamp.jpg',
-    seller_id: customers[0].id,
+    seller_id: SellerBuyers[0].id,
     location: 'West Parking Lot Entrance',
     distance: 4.7,
-    university: customers[0].university,
-    verified: customers[0].verified,
+    university: SellerBuyers[0].university,
+    verified: SellerBuyers[0].verified,
   },
   {
     name: 'Graphing Calculator',
@@ -182,11 +182,11 @@ const invoices = [
     price: 4500,
     condition: 'used',
     image_url: '/products/calculator.jpg',
-    seller_id: customers[2].id,
+    seller_id: SellerBuyers[2].id,
     location: 'Math Building - Room 101',
     distance: 2.0,
-    university: customers[2].university,
-    verified: customers[2].verified,
+    university: SellerBuyers[2].university,
+    verified: SellerBuyers[2].verified,
   },
   {
     name: 'Office Chair',
@@ -195,11 +195,11 @@ const invoices = [
     price: 2500,
     condition: 'used',
     image_url: '/products/chair.jpg',
-    seller_id: customers[5].id,
+    seller_id: SellerBuyers[5].id,
     location: 'Main Quad Fountain',
     distance: 1.1,
-    university: customers[5].university,
-    verified: customers[5].verified,
+    university: SellerBuyers[5].university,
+    verified: SellerBuyers[5].verified,
   },
   {
     name: 'Intro to Economics Notes (Printed)',
@@ -208,11 +208,11 @@ const invoices = [
     price: 900,
     condition: 'other',
     image_url: '/products/notes.jpg',
-    seller_id: customers[1].id,
+    seller_id: SellerBuyers[1].id,
     location: 'Humanities Building - Front Steps',
     distance: 0.9,
-    university: customers[1].university,
-    verified: customers[1].verified,
+    university: SellerBuyers[1].university,
+    verified: SellerBuyers[1].verified,
   },
   {
     name: 'Water Bottle (Insulated)',
@@ -220,11 +220,11 @@ const invoices = [
     price: 800,
     condition: 'used',
     image_url: '/products/water-bottle.jpg',
-    seller_id: customers[3].id,
+    seller_id: SellerBuyers[3].id,
     location: 'Gym Reception',
     distance: 2.8,
-    university: customers[3].university,
-    verified: customers[3].verified,
+    university: SellerBuyers[3].university,
+    verified: SellerBuyers[3].verified,
   },
   {
     name: 'Monitor 24" (1080p)',
@@ -232,11 +232,11 @@ const invoices = [
     price: 6000,
     condition: 'used',
     image_url: '/products/monitor.jpg',
-    seller_id: customers[4].id,
+    seller_id: SellerBuyers[4].id,
     location: 'Computer Science Building - Lab Entrance',
     distance: 1.4,
-    university: customers[4].university,
-    verified: customers[4].verified,
+    university: SellerBuyers[4].university,
+    verified: SellerBuyers[4].verified,
   },
   {
     name: 'Backpack (Laptop Sleeve)',
@@ -245,11 +245,11 @@ const invoices = [
     price: 3000,
     condition: 'used',
     image_url: '/products/backpack.jpg',
-    seller_id: customers[5].id,
+    seller_id: SellerBuyers[5].id,
     location: 'Transit Stop - Main Gate',
     distance: 5.2,
-    university: customers[5].university,
-    verified: customers[5].verified,
+    university: SellerBuyers[5].university,
+    verified: SellerBuyers[5].verified,
   },
 ];
 
@@ -268,7 +268,7 @@ const revenue = [
   { month: 'Dec', revenue: 4800 },
 ];
 
-export { users, customers, invoices, revenue };
+export { users, SellerBuyers, ProductListings, revenue };
 
 
 //localhost:3000/seed -> seeds the database with the above data, then redirects to the homepage. You can modify this data as you see fit, but make sure to keep the same structure so that it works with the rest of the app.
