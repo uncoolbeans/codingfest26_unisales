@@ -68,7 +68,7 @@ async function seedSellerBuyers() {
       id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
       name VARCHAR(255) NOT NULL,
       email VARCHAR(255) NOT NULL,
-      image_url VARCHAR(255) NOT NULL
+      image_url VARCHAR(255) NOT NULL,
       university VARCHAR(255) NOT NULL,
       verified BOOLEAN NOT NULL,
       rating NUMERIC(2, 1) NOT NULL
