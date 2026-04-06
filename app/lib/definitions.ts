@@ -16,6 +16,31 @@ export type Customer = {
   image_url: string;
 };
 
+export type SellerBuyer = {
+  id: string;
+  name: string;
+  email: string;
+  image_url: string;
+  university: string;
+  verified: boolean; // whether the seller's university affiliation has been verified
+  rating: number; // average rating from buyers (1-5)
+};
+
+// custom-defined type for the product listing form
+export type ProductListing = {
+  name: string; // product name
+  description: string; // product description
+  price: number; // product price in cents (e.g., $10.00 would be 1000)
+  condition: 'new' | 'used' | 'refurbished' | 'open-box' | 'other';
+  image_url: string;
+  seller_id: string;
+  location: string; // location of the seller (or designated pickup location)
+  distance: number; // distance in km from seller to buyer (calculated based on location)
+  university: string; // university the seller is affiliated with
+  verified: boolean; // whether the seller's university affiliation has been verified
+
+}
+
 export type Invoice = {
   id: string;
   customer_id: string;
