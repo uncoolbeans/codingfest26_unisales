@@ -9,12 +9,12 @@ export type User = {
   password: string;
 };
 
-export type Customer = {
-  id: string;
-  name: string;
-  email: string;
-  image_url: string;
-};
+//export type Customer = {
+//  id: string;
+//  name: string;
+//  email: string;
+//  image_url: string;
+//};
 
 export type SellerBuyer = {
   id: string;
@@ -41,6 +41,8 @@ export type ProductListing = {
 
 }
 
+
+// IGNORE BELOW
 export type Invoice = {
   id: string;
   customer_id: string;

@@ -1,6 +1,6 @@
 // This file contains placeholder data that you'll be replacing with real data in the Data Fetching chapter:
 // https://nextjs.org/learn/dashboard-app/fetching-data
-const users = [
+const users = [ //USED FOR LOGIN FUNCTIONALITY ONLY, NOT FOR DASHBOARD
   {
     id: '410544b2-4001-4271-9855-fec4b6a6442a',
     name: 'User',
@@ -9,7 +9,10 @@ const users = [
   },
 ];
 
-const customers = [
+// THE BELOW NEEDS TO BE REPLACED WITH 1. PRODUCTLISTING AND 2. SELLERBUYER DATA
+// THEN UPDATE THHE SEED FILE
+
+const customers = [ 
   {
     id: 'd6e15727-9fe1-4961-8c5b-ea44a9bd81aa',
     name: 'Evil Rabbit',
@@ -145,3 +148,6 @@ const revenue = [
 ];
 
 export { users, customers, invoices, revenue };
+
+
+//localhost:3000/seed -> seeds the database with the above data, then redirects to the homepage. You can modify this data as you see fit, but make sure to keep the same structure so that it works with the rest of the app.
